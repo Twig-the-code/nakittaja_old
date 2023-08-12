@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import Tasks from './components/Tasks'
+import Week from './components/Week'
 
 function App() {
   const [tasks, setTasks] = useState([])
 
   return (
     <div className='App'>
-      <p>Tähän tulee nakittaja</p>
+      <Week />
       <Tasks tasks={tasks} setTasks={setTasks} />
     </div>
   )
