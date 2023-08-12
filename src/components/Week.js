@@ -15,6 +15,7 @@ const Week = () => {
         <Day />
         <Day />
         <Day />
+        <Day />
       </section>
     </div>
   )
