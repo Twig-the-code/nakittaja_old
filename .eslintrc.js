@@ -3,7 +3,7 @@ module.exports = {
     'browser': true,
     'commonjs': true,
     'es2021': true,
-    'jest/globals': true,
+    'jest': true,
   },
   'extends': [
     'eslint:recommended',
@@ -23,9 +23,15 @@ module.exports = {
     }
   ],
   'parserOptions': {
+    'ecmaFeatures': {
+      'jsx': true
+    },
     'ecmaVersion': 'latest',
     'sourceType': 'module',
   },
+  'plugins': [
+    'react', 'jest'
+  ],
   'rules': {
     'indent': [
       'error',
@@ -33,7 +39,7 @@ module.exports = {
     ],
     'linebreak-style': [
       'error',
-      'unix'
+      'windows'
     ],
     'quotes': [
       'error',
@@ -52,5 +58,8 @@ module.exports = {
       'error', { 'before': true, 'after': true }
     ],
     'no-console': 0,
+    // Use these or downgrade "eslint-plugin-react": "^7.30.0" to fix JSX lint issues caused by eslint version bug
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off'
   }
 }
