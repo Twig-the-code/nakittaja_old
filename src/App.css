@@ -3,5 +3,14 @@
 }
 
 .day {
-  width: 100px;
+  flex-grow: 1;
+  height: 400px;
+  background-color: yellowgreen;
+  margin: 5px;
+}
+
+.week {
+  display: flex;
+  color: blue;
+  flex-direction: row; 
 }

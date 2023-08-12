@@ -6,16 +6,17 @@ function Day() {
 
 const Week = () => {
   return (
-    <section>
-      <h1>Viikkonäkymä</h1>
-      <Day />
-      <Day />
-      <Day />
-      <Day />
-      <Day />
-      <Day />
-      <Day />
-    </section>
+    <div>
+      <p>Viikkonäkymä</p>
+      <section className="week">
+        <Day />
+        <Day />
+        <Day />
+        <Day />
+        <Day />
+        <Day />
+      </section>
+    </div>
   )
 }
 export default Week
