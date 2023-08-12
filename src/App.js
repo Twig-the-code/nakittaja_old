@@ -6,7 +6,7 @@ function App() {
   const [tasks, setTasks] = useState([])
 
   return (
-    <div>
+    <div className='App'>
       <p>Tähän tulee nakittaja</p>
       <Tasks tasks={tasks} setTasks={setTasks} />
     </div>
