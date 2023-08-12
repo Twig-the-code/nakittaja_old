@@ -1,4 +1,4 @@
-const Tasks = ({ tasks, setTasks }) => {
+const Tasks = () => {
 
   return (
     <div>
